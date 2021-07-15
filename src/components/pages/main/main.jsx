@@ -1,10 +1,13 @@
 import React from 'react'
+import MainContainer from '../../../containers/main/main'
+import './main.css'
 
 const main = () => {
     return (
-        <div>
+        <section>
+            <MainContainer />
             <h1>main</h1>
-        </div>
+        </section>
     )
 }
 

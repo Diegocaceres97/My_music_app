@@ -1,10 +1,13 @@
 import React from 'react'
-import {loginURL} from '../../../services/SpotifyLogic'
-const BtnLogin = () => {
+
+
+const BtnLogin = ({ url }) => {
+    
     return (
-        <button className="LoginButton" href={loginURL}>
-            Login
+        <button className="LoginButton" onClick={()=>window.location.href=url}>
+            Login 
         </button>
+      
     )
 }
 

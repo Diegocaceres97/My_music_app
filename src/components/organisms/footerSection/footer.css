@@ -1,0 +1,121 @@
+.FooterLogin {
+  position: fixed;
+  background-color: black;
+  height: 70vh;
+  width: 100vw;
+  margin-top: -2px;
+}
+
+.FooterContainer {
+  position: fixed;
+  bottom: 0;
+  height: 70px;
+  width: 100vw;
+  background-color: #181818;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.FooterLeft {
+  -webkit-box-flex: 0.3;
+      -ms-flex: 0.3;
+          flex: 0.3;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  max-width: 300px;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+.FooterLeft img {
+  height: 70px;
+  width: 60px;
+  margin-right: 20px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.FooterCenter {
+  -webkit-box-flex: 0.4;
+      -ms-flex: 0.4;
+          flex: 0.4;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  max-width: 300px;
+  cursor: pointer;
+}
+
+.FooterCenter .repeat {
+  color: #00ff00;
+  -webkit-transition: -webkit-transform 200ms ease-in-out !important;
+  transition: -webkit-transform 200ms ease-in-out !important;
+  transition: transform 200ms ease-in-out !important;
+  transition: transform 200ms ease-in-out, -webkit-transform 200ms ease-in-out !important;
+}
+
+.FooterCenter .shuffle {
+  color: #00ff00;
+}
+
+.FooterCenter .MuiSvgIcon-root:hover {
+  -webkit-transform: scale(1.2) !important;
+          transform: scale(1.2) !important;
+  -webkit-transition: -webkit-transform 200ms ease-in-out !important;
+  transition: -webkit-transform 200ms ease-in-out !important;
+  transition: transform 200ms ease-in-out !important;
+  transition: transform 200ms ease-in-out, -webkit-transform 200ms ease-in-out !important;
+}
+
+.FooterRight {
+  -webkit-box-flex: 0.3;
+      -ms-flex: 0.3;
+          flex: 0.3;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-right: 35px;
+}
+
+.FooterRight .MuiSlider-root {
+  color: #00ff00;
+}
+
+@media (max-width: 500px) {
+  .FooterRight .MuiSlider-root {
+    display: none;
+  }
+  .MuiGrid-spacing-xs-2 > .MuiGrid-item {
+    display: none;
+  }
+  .nameAlbum {
+    margin-left: -12px;
+  }
+  .FooterCenter {
+    margin-left: 50px;
+  }
+  .FooterRight {
+    margin-left: 5px;
+  }
+}
+/*# sourceMappingURL=footer.css.map */

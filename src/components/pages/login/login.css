@@ -1,0 +1,25 @@
+.ContainerLogin {
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  height: 80vh;
+  background-color: #000;
+}
+
+.ContainerLogin img {
+  width: 100%;
+}
+
+button {
+  padding: 20px;
+  margin-top: -10px;
+  background-color: #1db954;
+  border-radius: 90px;
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: bolder;
+  cursor: pointer;
+  width: 10rem;
+}
+/*# sourceMappingURL=login.css.map */

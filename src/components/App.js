@@ -8,8 +8,8 @@ import Login from './pages/login/login'
 import Main from './pages/main/main'
 import Favorite from './pages/favorites/favorites'
 import NotFound from './pages/notfound/notfound'
-import Header from './molecules/header/header'
-import Footer from './molecules/footer/footer'
+import Header from './organisms/headerSection/header'
+import Footer from './organisms/footerSection/footer'
 
 const App = ()=>(
 
