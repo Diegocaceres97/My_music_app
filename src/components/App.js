@@ -11,8 +11,8 @@ import NotFound from './pages/notfound/notfound'
 import Header from './organisms/headerSection/header'
 import Footer from './organisms/footerSection/footer'
 
-const App = ()=>(
 
+const App = ()=>(
   <Router>
     <Header />
     <Switch>

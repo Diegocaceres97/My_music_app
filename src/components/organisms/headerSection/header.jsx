@@ -1,13 +1,17 @@
 import React, {useState,useEffect} from 'react'
 import Headerleft from '../../molecules/header/headerLeft/headerLeft'
 import HeaderRight from '../../molecules/header/headerRight/headerRight'
+import { useSelector } from 'react-redux';
+import { selectUser } from '../../../features/UserSlice';
 import './header.css'
 
 const header = () => {
+ const user = useSelector(selectUser);
+    
     const [valor, setValor] = useState(false)
     useEffect(()=>{
         if(localStorage.getItem('token')){
-            setValor(true);
+            setValor(true);  
         }
         
     },[valor]);
@@ -16,7 +20,7 @@ const header = () => {
         <div className="HeaderContainer">
             <Headerleft />
              
-             <HeaderRight />
+             <HeaderRight User = {user}/>
             
         </div>
          :
