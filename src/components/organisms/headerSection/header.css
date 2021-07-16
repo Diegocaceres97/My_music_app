@@ -30,19 +30,25 @@
   color: #181818;
   border-radius: 30px;
   padding: 10px;
-  margin-left: 30px;
+  margin-left: 15px;
 }
 
 .HeaderLeft input {
   border: 1px solid white;
   border-radius: 10px;
-  width: 100%;
+  min-width: 15vw;
   height: 20px;
-  margin-left: 5px;
+  margin-left: 20px;
   background: url(../../../assets/static/search.png) no-repeat scroll 7px 7px;
   padding-left: 30px;
   padding-top: 3px;
   color: white;
+}
+
+.HeaderLeft img {
+  min-width: 100px;
+  height: 60px;
+  cursor: pointer;
 }
 
 .HeaderRight {
@@ -54,7 +60,6 @@
           align-items: center;
   margin-right: 10px;
   cursor: pointer;
-  margin-top: 10px;
   color: white;
   font-family: 'Heebo', sans-serif;
 }

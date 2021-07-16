@@ -1,10 +1,11 @@
 import React, { useState, useEffect} from 'react'
 import {useDispatch} from 'react-redux';
 import { SET_TOKEN } from '../../features/TokenSlice';
-import {DataUser } from '../../services/SpotifyServices';
+import {DataUser, PlayList, FavoriteTracks } from '../../services/SpotifyServices';
 import {getTokenFromURL} from '../../services/SpotifyLogic';
 import { SET_USER} from '../../features/UserSlice';
-import Login from '../../components/pages/login/login';
+import { SET_PLAYLIST} from '../../features/PlaylistSlice';
+import { SET_ITEMS} from '../../features/FavoriteSlice';
 import { Link } from 'react-router-dom';
 const main = () => {
     
@@ -19,6 +20,8 @@ const main = () => {
                         if(_token){
                             dispatch(SET_TOKEN(localStorage.getItem('token')))
                             DataUser().then(user => dispatch(SET_USER(user)));
+                            PlayList().then(playlist =>dispatch(SET_PLAYLIST(playlist)));
+                            FavoriteTracks().then(favoritos =>dispatch(SET_ITEMS(favoritos)));
 
                         }else{
                                 if(window.location.hash !== ""){
