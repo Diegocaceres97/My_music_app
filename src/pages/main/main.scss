@@ -1,0 +1,91 @@
+section{
+    display: flex;
+    background: linear-gradient(#340034, #000);
+    width:100%;
+    height:100%;
+}
+.Info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+    img {
+        width: 20rem;
+        object-fit:  contain;
+        margin: 0 20px;
+        box-shadow: 0 4px 60px #000;
+}
+.InfoText{
+    padding-top: 20px;
+    font-family: 'Heebo', sans-serif;
+    font-size: 1rem;
+    
+}
+}
+.Songs{
+margin: 0px 30px 85px;
+}
+.Icons{
+padding-right: 10px;
+}
+.SongRowContainer{
+display: flex;
+margin-left: 25px;
+align-items: center;
+z-index: 90;
+margin-bottom: 12px;
+color: white;
+img{
+    height:70px;
+    width:70px;
+    object-fit: contain;
+}  
+.SongInfo{
+    padding-left: 10px;
+}
+p {
+    font-size:1.5rem;
+}
+}
+.SongRowContainer:hover{
+    cursor: pointer;
+    background-color: #000000;
+    opacity: 0.8;
+    color: #fff;
+    width: 60vw;
+}
+@media(max-width: 560px) {
+    section{
+        justify-content: center;
+        flex-direction: column;
+    }
+    .Info {
+        img {
+            width: 60vw;
+            margin: 0 20px;
+            box-shadow: 0 4px 60px #000;
+    }
+}
+  
+  .Songs{
+      margin-top: 10px;
+  }
+    
+    .SongRowContainer{ 
+    margin-left: -20px;
+    p {
+        font-size:16px;
+    }
+}
+}
+@media(min-width: 1679px){
+    .Info{
+        margin-top: 80px;
+    }
+    section{
+       align-items: flex-start;
+       justify-content:center;
+        height:100vh;
+    }
+}

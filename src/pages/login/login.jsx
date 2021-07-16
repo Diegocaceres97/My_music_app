@@ -1,8 +1,8 @@
 import React from 'react'
-import BtnLogin from '../../atoms/BtnLogin/BtnLogin';
-import ImagenSpoti from '../../../assets/static/Spotify-symbol.jpg';
-import { loginURL } from '../../../services/SpotifyLogic'
-import LoginContainer from '../../../containers/login/login'
+import BtnLogin from '../../components/atoms/BtnLogin/BtnLogin';
+import ImagenSpoti from '../../assets/static/Spotify-symbol.jpg';
+import { loginURL } from '../../services/SpotifyLogic'
+import LoginContainer from '../../containers/login/login'
 import './login.css'
 
 const login = () => (

@@ -70,8 +70,17 @@
 }
 
 @media (max-width: 500px) {
+  .HeaderContainer {
+    margin-bottom: -1px;
+  }
   .HeaderLeft {
     margin-left: 5px;
+  }
+  .HeaderLeft img {
+    width: 10px;
+  }
+  .HeaderLeft input {
+    margin-left: 10px;
   }
 }
 /*# sourceMappingURL=header.css.map */

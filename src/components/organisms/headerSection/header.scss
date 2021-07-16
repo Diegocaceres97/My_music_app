@@ -24,7 +24,7 @@ input {
     border-radius: 10px;
     min-width: 15vw;
     height:20px;
-    margin-left:20px ;
+    margin-left:20px;
     background: url(../../../assets/static/search.png) no-repeat scroll 7px 7px;
     padding-left:30px;
     padding-top: 3px;
@@ -50,7 +50,17 @@ h4{
 }
 
 @media(max-width: 500px) {
+    .HeaderContainer{
+    margin-bottom: -1px;
+    }
     .HeaderLeft{
     margin-left: 5px;
+    img{
+        width: 10px;
     }
+    input {
+        margin-left:10px ;
+    }
+    }
+    
 }
