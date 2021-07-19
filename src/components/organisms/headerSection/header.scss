@@ -22,7 +22,7 @@ margin-left: 15px;
 input {
     border: 1px solid white;
     border-radius: 10px;
-    min-width: 12vw;
+    width:20vw;    
     height:20px;
     margin-left:20px;
     background: url(../../../assets/static/search.png) no-repeat scroll 7px 7px;
@@ -64,6 +64,7 @@ h4{
     }
     input {
         margin-left:10px ;
+        min-width: 12vw;
     }
     }
     
