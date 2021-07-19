@@ -5,7 +5,7 @@ import { useSelector } from 'react-redux';
 import { selectUser } from '../../../features/UserSlice';
 import './header.css'
 
-const header = () => {
+const Header = () => {
  const user = useSelector(selectUser);
     
     const [valor, setValor] = useState(false)
@@ -33,4 +33,4 @@ const header = () => {
     )
 }
 
-export default header
+export default Header

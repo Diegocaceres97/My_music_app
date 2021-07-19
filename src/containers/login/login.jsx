@@ -1,6 +1,6 @@
 import React, {useState, useEffect} from 'react'
 
-const login = () => {
+const Login = () => {
     const [valor, setValor] = useState(false)
     useEffect(()=>{
         if(localStorage.getItem('token')){
@@ -24,4 +24,4 @@ const login = () => {
     )
 }
 
-export default login
+export default Login

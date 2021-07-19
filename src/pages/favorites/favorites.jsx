@@ -1,11 +1,25 @@
 import React from 'react'
+import { useSelector} from 'react-redux';
+import {selectITEMS} from '../../features/FavoriteSlice';
+import FavoriteContainer from '../../containers/favorites/favorites';
+import SongRow from '../../components/organisms/main/SongRow/SongRow';
+import './favorite.css'
 
-const favorites = () => {
+const Favorites = () => {
+    const favoritos = useSelector(selectITEMS);
+
     return (
-        <div>
-            <h1>favorites</h1>
+        <section>
+        <FavoriteContainer />
+        <div className="Songs">
+        {
+            favoritos&&
+             favoritos.map((item,index)=>
+                <SongRow track={item} key={index} /> )              
+        }
         </div>
+    </section>
     )
 }
 
-export default favorites
+export default Favorites

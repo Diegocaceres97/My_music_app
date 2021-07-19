@@ -4,7 +4,7 @@ import FooterCenter from '../../molecules/footer/footerCenter/footerCenter'
 import FooterRight from '../../molecules/footer/footerRight/footerRight'
 import './footer.css'
 
-const footer = () => {
+const Footer = () => {
     const [valor, setValor] = useState(false)
     useEffect(()=>{
         if(localStorage.getItem('token')){
@@ -31,4 +31,4 @@ const footer = () => {
         
 }
 
-export default footer
+export default Footer

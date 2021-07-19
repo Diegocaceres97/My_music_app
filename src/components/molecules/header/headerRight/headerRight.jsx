@@ -1,7 +1,8 @@
 import React from 'react'
 import {Avatar} from '@material-ui/core';
 import ExitToAppIcon from '@material-ui/icons/ExitToApp';
-
+import BtnFavorite from '../../../atoms/BtnFavorite/BtnFavorite'
+import { Link } from 'react-router-dom';
 
 const headerRight = ({User}) => {
     const cerrarSession = () => {
@@ -10,6 +11,9 @@ const headerRight = ({User}) => {
     }
     return (
         <div className="HeaderRight">
+            <Link to="/favoritos">
+                <BtnFavorite/>
+                </Link>
               <Avatar src={User&& User.images[0].url}/>
                 <h4> {
                User !=null ?

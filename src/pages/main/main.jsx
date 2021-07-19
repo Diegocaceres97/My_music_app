@@ -5,8 +5,11 @@ import { selectPlaylist} from '../../features/PlaylistSlice';
 import SongRow from '../../components/organisms/main/SongRow/SongRow';
 import './main.css'
 
-const main = () => {
+const Main = ({res}) => {
     const playlist = useSelector(selectPlaylist);
+    if(res){
+        console.log("lllegoooooooo")
+    }
     return (
         <section>
             <MainContainer />
@@ -21,4 +24,4 @@ const main = () => {
     )
 }
 
-export default main
+export default Main

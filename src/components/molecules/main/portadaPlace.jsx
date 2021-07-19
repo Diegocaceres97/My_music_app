@@ -1,6 +1,8 @@
 import React from 'react'
 import PhotoAlbumIcon from '@material-ui/icons/PhotoAlbum';
-const bodyMain = ({img}) => {
+
+
+const bodyMain = ({img, titulo1, titulo2}) => {
     return(
     <div className="Info">
         {
@@ -10,8 +12,8 @@ const bodyMain = ({img}) => {
    <PhotoAlbumIcon fontSize="large" />
         }  
         <div className="InfoText">
-        <h4>¡Amazing!</h4>
-        <h2>Lo mas escuchado</h2>
+        <h4>{titulo1}</h4>
+        <h2>{titulo2}</h2>
         <p>Descubre lo mejor</p>
         </div>
 </div>
