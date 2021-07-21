@@ -8,11 +8,13 @@ const BtnLogout = () => {
     }
     return (
         <>
-        <ExitToAppIcon data-tip data-for="botonTooltipLogout" onClick={cerrarSession} className="Logout"/>
+        <ExitToAppIcon data-tip data-for="botonTooltipLogout" onClick={cerrarSession} 
+        className="Logout"
+        data-testid="custom-element" />
         <ReactTooltip id="botonTooltipLogout"
         place="bottom"
         >
-             Cerrar Session
+             Cerrar Sesion
         </ReactTooltip>
         </>
         )

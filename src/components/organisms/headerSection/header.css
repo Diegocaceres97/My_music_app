@@ -49,6 +49,8 @@
   min-width: 100px;
   height: 60px;
   cursor: pointer;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .HeaderRight {
@@ -87,6 +89,12 @@
   .HeaderLeft input {
     margin-left: 10px;
     min-width: 12vw;
+  }
+}
+
+@media (max-width: 500px) and (max-width: 320px) {
+  .HeaderRight h4 {
+    display: none;
   }
 }
 /*# sourceMappingURL=header.css.map */

@@ -1,9 +1,10 @@
 import React from 'react'
 import PhotoAlbumIcon from '@material-ui/icons/PhotoAlbum';
 
-
 const bodyMain = ({img, titulo1, titulo2}) => {
+ 
     return(
+        
     <div className="Info">
         {
    img ?
@@ -16,7 +17,7 @@ const bodyMain = ({img, titulo1, titulo2}) => {
         <h2>{titulo2}</h2>
         <p>Descubre lo mejor</p>
         </div>
-</div>
+        </div>
 )
 }
 export default bodyMain

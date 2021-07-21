@@ -3,13 +3,13 @@ import { useSelector} from 'react-redux';
 import {selectITEMS} from '../../features/FavoriteSlice';
 import FavoriteContainer from '../../containers/favorites/favorites';
 import SongRow from '../../components/organisms/main/SongRow/SongRow';
-import './favorite.css'
+import './favorite.scss'
 
 const Favorites = () => {
     const favoritos = useSelector(selectITEMS);
 
     return (
-        <section>
+        <section className="SectionFavorite">
         <FavoriteContainer />
         <div className="Songs">
         {

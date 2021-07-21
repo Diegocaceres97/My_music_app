@@ -1,4 +1,4 @@
-section{
+.SectionFavorite{
     display: flex;
     background: linear-gradient(#340034, #000);
     width:100%;
@@ -83,9 +83,9 @@ p {
     .Info{
         margin-top: 80px;
     }
-    section{
+    .SectionFavorite{
        align-items: flex-start;
        justify-content:center;
-        height:100vh;
+       height:100%;
     }
 }

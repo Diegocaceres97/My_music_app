@@ -1,17 +1,14 @@
-export const getTokenFromURL = () =>{
+export const getTokenFromURL = () =>{ //Metodo para obtener access token del hash url
     return window.location.hash
-    //retorna la parte de un ancla URL a partir de la #
+
     .substring(1).split("&")
-    //substring extrae el primer caracter en este caso e imprime
-    //el resto de la cadena hasta el final
+    
     .reduce((initial, item) =>{
-        //#accessToken = clave&name=js
-        //ejecuta una funcion reductora sobre cada elemento del array
-       // y da como resultado un solo valor array dentro arrays
+        
         let parts = item.split("=")
-        //decodeURIComponent decodifica el sitio web
+        
         initial[parts[0]] = decodeURIComponent(parts[1])
-        //en este caso del primer array
+      
         return initial
     },{})
 }

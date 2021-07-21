@@ -5,6 +5,11 @@ import PortadaPlace from '../../components/molecules/main/portadaPlace';
 
 const Favorites = () => {
     const favoritos = useSelector(selectITEMS);
+
+    if(!localStorage.getItem('token')){
+        window.location.href="http://localhost:3000/";
+    }
+    
     return (
        
              <div className="BodyContainer">

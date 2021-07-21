@@ -2,6 +2,7 @@ import React from 'react'
 import FavoriteIcon from "@material-ui/icons/Favorite"
 
 const SongRow = ({track}) => {
+    if(track==null){window.alert("gola")}
     return (
         <div className="SongRowContainer">
             <FavoriteIcon className="Icons" fontSize="medium"/>
