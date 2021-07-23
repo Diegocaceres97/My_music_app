@@ -1,11 +1,7 @@
-import React from 'react'
+import React from "react";
 
 const InputBusqueda = () => {
-    return (
-    
-                <input type="text" placeholder="Search for artist, songs or other" /> 
+  return <input type="text" placeholder="Search for artist, songs or other" />;
+};
 
-    )
-}
-
-export default InputBusqueda
+export default InputBusqueda;

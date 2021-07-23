@@ -6,10 +6,6 @@ import PortadaPlace from '../../components/molecules/main/portadaPlace'
 const Main = () => {
         const playlist = useSelector(selectPlaylist);
         //const itemsFavorites = useSelector(selectITEMS);
-       
-        if(!localStorage.getItem('token')){
-            window.location.href="http://localhost:3000/";
-        }
         
     return (
        
